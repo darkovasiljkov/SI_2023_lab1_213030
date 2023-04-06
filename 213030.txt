@@ -1,0 +1,61 @@
+4. mkdir SI_2023_lab1_213030
+cd SI_2023_lab1_213030
+git init (иницијализираме локален репозиториум во кој ќе работиме со git, името е исто како remote repoto).
+
+7. git remote add origin https://github.com/darkovasiljkov/SI_2023_lab1_213030.git
+Поврзуваме локален и remote repo.
+
+6. echo "darko vasiljkov 213030">README.md
+git add README.md
+git commit -m "initial commit"
+Додаваме README.md и го правиме првиот commit.
+
+7. git add SILab1.java
+git commit -m "Add java class"
+
+8. git push --all (синхронизираме све што сме напраиле до сега)
+
+9. git branch bug1
+git branch bug2
+git branch bug3 (додаваме на мастерот нови 3 гранки одделни каде ќе работиме)
+
+10. git checkout bug1 (одиме на гранката bug1 - во долните барања исто така со checkout ќе одиме и во другите гранки)
+
+11. Ја поправаме грешката во SILab1.java и правиме git add SILab1.java, правиме git commit -m "Fix wrong loop for reading"
+
+12. git checkout bug2
+
+13. git add SILab1.java, git commit -m "Fix wrong condition in filterOddNumbers"
+
+14. git checkout bug3
+
+15.  git add SILab1.java, git commit -m "Fix method sumEvenNumbers"
+
+16. git push --all origin (со оваа команда ги синхронизираме сите гранки со remote repo)
+
+17. git checkout master (префрлуваме на master)
+
+18. git merge bug1 (спојуваме гранка bug1 со master, во долните барања исто и за bug2, bug3)
+
+19. git push --all origin 
+
+20. git merge bug2
+
+21. git push --all origin 
+
+22. git checkout bug3
+
+23. git rebase master (ние сме на гранката bug3 од тука правиме rebase(или целосен merge) со master grankata)
+
+24. git checkout master (одиме на гранката master)
+
+25. git merge bug3 (спојуваме гранка bug3 со master)
+
+26. git push origin bug3 --force, git push --all origin (целосна синхронизација)
+
+27. git add logs.txt
+git commit -m "Final commit"
+git add 213030.txt
+git commit -m "Final commit"
+28. git push origin --all (крајна синхронизација)
+
