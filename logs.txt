@@ -1,0 +1,23 @@
+$ git log
+commit 5d07e997acfdfbfec86bdee8aaa96d920aab7517 (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: Darko <93830641+darkovasiljkov@users.noreply.github.com>
+Date:   Thu Apr 6 22:23:03 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit 9141c836ec059c1ffa7510b6682c467aa9e45227
+Merge: 8c15351 67989d3
+Author: Darko <93830641+darkovasiljkov@users.noreply.github.com>
+Date:   Thu Apr 6 22:24:28 2023 +0200
+
+    Merge branch 'bug2'
+
+commit 67989d3690f121b338dbdf9b1d84e50a683ee3f7 (origin/bug2, bug2)
+Author: Darko <93830641+darkovasiljkov@users.noreply.github.com>
+Date:   Thu Apr 6 22:20:30 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit 8c1535118d3285e6ad20301a88a89c2abe145483 (origin/bug1, bug1)
+Author: Darko <93830641+darkovasiljkov@users.noreply.github.com>
+Date:   Thu Apr 6 22:19:00 2023 +0200
